@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_water_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".WaterRequest">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/heading2"
+                android:text="Water Request Form"
+                android:layout_below="@+id/imageView"
+                android:textSize="34dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/cropName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Crop Name"
+                android:inputType="textEmailAddress"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cropName"
+                android:layout_marginTop="32dp"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Start Date DD/MM/YY"
+                android:inputType="textEmailAddress"
+                android:textColor="#000" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Enter End Date DD/MM/YY"
+                android:textColor="#000"
+                android:ems="10"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_below="@+id/startDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/endDate"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cropName"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="center"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="Enter Start Time (HH:MM)"
+                android:inputType="textPostalAddress"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/startTime"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="center"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="Enter End Time (HH:MM)"
+                android:inputType="text"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/buttonRegisterWater"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/endTime"
+                android:layout_marginTop="21dp"
+                android:text="Submit" />
+        </LinearLayout>>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/logo_resized" />
+
+</RelativeLayout>

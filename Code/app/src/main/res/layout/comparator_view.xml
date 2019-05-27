@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:text="Original_Request"
+        android:textColor="@color/valid"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/DateDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Duration"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="50dp"
+        android:layout_below="@+id/Request"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/TimeDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Duration"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="69dp"
+        android:layout_below="@+id/DateDuration"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power Consumption"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_below="@+id/TimeDuration"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/WaterConsumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Consumption"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="107dp"
+        android:layout_below="@+id/Power"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ExpectedBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expected Bill #"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="126dp"
+        android:textColor="@color/valid"
+        android:layout_below="@+id/WaterConsumption"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/peakHourBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peakHourBill"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_below="@+id/ExpectedBill"
+        android:paddingLeft="10dp"
+        android:textColor="@color/warning"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/nonpeakHourBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nonpeakHourBill"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:layout_below="@+id/peakHourBill"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+</RelativeLayout>

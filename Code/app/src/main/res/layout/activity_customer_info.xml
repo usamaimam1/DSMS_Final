@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/cnic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="CNIC # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Postal Address # "
+                android:layout_below="@+id/cnic"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textConsumerID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textPostal"
+                android:text="ConsumerID # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textReferenceNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textConsumerID"
+                android:text="Reference Number # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textBoringinfeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textReferenceNumber"
+                android:text="Boringinfeet # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textWaterpipediameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textBoringinfeet"
+                android:text="WaterpipeDiameter # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textSmartmeterAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textWaterpipediameter"
+                android:text="SmartMeterAvaialablity # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textSmartmeterAvailability"
+                android:text="PaymentMethod # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/textAgriculturalArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textPaymentMethod"
+                android:text="Agricultural Area # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textTubewellHorsepower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textAgriculturalArea"
+                android:text="TubewellHorsepower # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@+id/textTubewellHorsepower"
+                android:text="Password # "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestComparator">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.nikhil.popularmovies.MainActivity">
+
+            <ListView
+                android:id="@+id/RequestComparatorList"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+            <Button
+                android:id="@+id/submitOriginal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit Original"
+                />
+
+            <Button
+                android:id="@+id/submitAlternate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit Alternate"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
